@@ -1,0 +1,92 @@
+/* src/components/CryptoList.css */
+
+.crypto-container {
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.crypto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .crypto-item {
+    background-color: #333;
+    color: #fff;
+}
+
+.crypto-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.crypto-item span {
+    flex: 1;
+    text-align: left;
+    color: inherit; /* Adicionado para herdar a cor atual */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: inherit; /* Adicionado para herdar a cor atual */
+}
+
+.search-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.dark-mode .search-input {
+    background-color: #555;
+    color: #fff;
+    border-color: #666;
+}
+
+.crypto-chart {
+    margin-top: 20px;
+    color: inherit; /* Adicionado para herdar a cor atual */
+}
+
+/* src/App.css */
+.App {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode .toggle-btn {
+    background-color: #333;
+    color: white;
+}
